@@ -20,7 +20,7 @@ def time_between_shutdowns(logfile):
     time_between_shutdowns calculates the time difference between first and last event in logfile
     """
     events = get_shutdown_events(logfile)
-    evnts_dt_objs = [logstamp_to_datetime(event.split()[1]) for event in events]
+    events_dt_objs = [logstamp_to_datetime(event.split()[1]) for event in events]
     time_diff = events_dt_objs[-1] - events_dt_objs[0]
     return time_diff
 
