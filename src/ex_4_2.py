@@ -6,7 +6,7 @@ def logstamp_to_datetime(datestr):
     """
     logstamp_to_datetime converts datetime string obj to datetime obj
     """
-    return datetime.strptime(datestr,'%Y-%m-&dT%H:%M:%S')
+    return datetime.strptime(datestr,'%Y-%m-%dT%H:%M:%S')
 
 
 # >>>> The code below will call your function and print the results
